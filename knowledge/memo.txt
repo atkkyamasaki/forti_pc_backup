@@ -57,7 +57,7 @@
 　sudo php app/console server:run --env=prod 0.0.0.0:80
 
 ・PID 確認と Kill
-　sudo ps aux | grep php
+　sudo ps aux | grep php  または sudo lsof -i:80
 　sudo kill 580
 
 
