@@ -10,6 +10,32 @@
 　　Sublime
 　　Memo 関連
 
+
+　[開発環境 Server]
+　　- Guest OS (Gate team用)
+　　IP: 10.130.3.202
+　　Id/pass : fortinet_tacjp/fortinet 
+　　OS :Ubuntu 16.04 LTS
+　　sshとVNC で入れるかと思います。
+　　br0経由でLAB VLAN(VLAN3)に接続してます。
+　　
+　　- Guest OS (Wifi team用)
+　　IP: 10.130.3.203
+　　OS :Ubuntu 16.04 LTS
+　　br0経由でLAB VLAN(VLAN3)に接続してます。
+　　
+　　- Host OS
+　　IP: 10.130.3.199 
+　　Id/pass : fortinet_tacjp/fortinet 
+　　Model/OS : Dell R230/Ubuntu 16.04 LTS
+　　location : C7ラックの一番上
+　　sshとVNCで入れます。KVM, dockerを入れています。
+　　NICのeno1をbr0で使用しており、LAB VLAN(VLAN3)につながっています。
+　　NICはまだ4つくらい余ってますので、必要に応じ使ってもらって大丈夫です。
+
+
+
+
 ■ Ticket Assign Tool
 
 ・server
